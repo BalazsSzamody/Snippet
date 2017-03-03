@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum SnippetType: String {
+    case Text = "Text"
+    case Photo = "Photo"
+}
+
 struct SnippetData {
     init() {
         print("new snippet created")
