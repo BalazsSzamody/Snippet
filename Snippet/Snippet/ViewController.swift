@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         let textAction = UIAlertAction(title: "Text", style: .default) {
             (alert: UIAlertAction!) -> Void in
-            self.data.append(SnippetData(snippetType: .text))
+            self.createNewTextSnippet()
         }
         let photoAction = UIAlertAction(title: "Photo", style: .default) {
             (alert: UIAlertAction!) -> Void in
@@ -43,7 +43,19 @@ class ViewController: UIViewController {
         
     }
     
-
+    func createNewTextSnippet() {
+        guard let textEntryVC = storyboard?.instantiateViewController(withIdentifier: "textSnippetEntry") as? TextSnippetEntryViewController else {
+            print("TextSnippetEntryViewController could not be instantiated from storyboard")
+            return
+        }
+        textEntryVC.modalTransitionStyle = .coverVertical
+        textEntryVC.saveText = { (text:String) in
+            let newTextSnippet = TextData(text: text)
+            self.data.append(newTextSnippet)
+        }
+        present(textEntryVC, animated: true, completion: nil)
+    
+    }
     
 }
 

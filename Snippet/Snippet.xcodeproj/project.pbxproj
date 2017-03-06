@@ -13,6 +13,7 @@
 		60C567401E696909003F3717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60C5673F1E696909003F3717 /* Assets.xcassets */; };
 		60C567431E696909003F3717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C567411E696909003F3717 /* LaunchScreen.storyboard */; };
 		60C5674B1E69692F003F3717 /* SnippetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5674A1E69692F003F3717 /* SnippetData.swift */; };
+		60C5674D1E6DA62C003F3717 /* TextSnippetEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5674C1E6DA62C003F3717 /* TextSnippetEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		60C567421E696909003F3717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60C567441E696909003F3717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60C5674A1E69692F003F3717 /* SnippetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnippetData.swift; sourceTree = "<group>"; };
+		60C5674C1E6DA62C003F3717 /* TextSnippetEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSnippetEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				60C567411E696909003F3717 /* LaunchScreen.storyboard */,
 				60C567441E696909003F3717 /* Info.plist */,
 				60C5674A1E69692F003F3717 /* SnippetData.swift */,
+				60C5674C1E6DA62C003F3717 /* TextSnippetEntryViewController.swift */,
 			);
 			path = Snippet;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C5674D1E6DA62C003F3717 /* TextSnippetEntryViewController.swift in Sources */,
 				60C5673B1E696909003F3717 /* ViewController.swift in Sources */,
 				60C567391E696909003F3717 /* AppDelegate.swift in Sources */,
 				60C5674B1E69692F003F3717 /* SnippetData.swift in Sources */,

@@ -23,3 +23,12 @@ class SnippetData {
     }
 }
 
+class TextData: SnippetData{
+    let textData: String
+    
+    init (text: String) {
+        textData = text
+        super.init(snippetType: .text)
+    print("Text snippet data: \(textData)")
+    }
+}

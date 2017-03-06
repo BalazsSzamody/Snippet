@@ -46,5 +46,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Text Snippet Entry View Controller-->
+        <scene sceneID="HqQ-lQ-o0i">
+            <objects>
+                <viewController storyboardIdentifier="textSnippetEntry" id="ECx-uW-CKo" customClass="TextSnippetEntryViewController" customModule="Snippet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bkc-tb-FJZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="OAq-Nc-dVZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XWr-XG-EZ8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gqW-Me-4Nf">
+                                <rect key="frame" x="0.0" y="28" width="375" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ECx-uW-CKo" id="qkJ-Wt-tJe"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.58898788998679363" blue="0.075875899613495057" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OAq-Nc-dVZ" firstAttribute="top" secondItem="gqW-Me-4Nf" secondAttribute="bottom" constant="20" id="cUg-4P-5ff"/>
+                            <constraint firstAttribute="trailing" secondItem="gqW-Me-4Nf" secondAttribute="trailing" id="gQ6-bn-ZJJ"/>
+                            <constraint firstItem="gqW-Me-4Nf" firstAttribute="leading" secondItem="XWr-XG-EZ8" secondAttribute="leading" id="qyk-Or-teu"/>
+                            <constraint firstItem="gqW-Me-4Nf" firstAttribute="top" secondItem="Bkc-tb-FJZ" secondAttribute="bottom" constant="8" id="wi5-mS-hbF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="gqW-Me-4Nf" id="Ko5-xk-I4b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gMb-Uz-VFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="314"/>
+        </scene>
     </scenes>
 </document>
