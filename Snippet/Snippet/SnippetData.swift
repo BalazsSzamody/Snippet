@@ -14,7 +14,7 @@ enum SnippetType: String {
 }
 
 
-struct SnippetData {
+class SnippetData {
     let type: SnippetType
     
     init( snippetType: SnippetType) {
@@ -22,3 +22,4 @@ struct SnippetData {
         print("\(type.rawValue) snippet created")
     }
 }
+
