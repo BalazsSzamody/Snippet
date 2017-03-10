@@ -14,6 +14,8 @@
 		60C567431E696909003F3717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C567411E696909003F3717 /* LaunchScreen.storyboard */; };
 		60C5674B1E69692F003F3717 /* SnippetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5674A1E69692F003F3717 /* SnippetData.swift */; };
 		60C5674D1E6DA62C003F3717 /* TextSnippetEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5674C1E6DA62C003F3717 /* TextSnippetEntryViewController.swift */; };
+		60D536B71E730E98004CDD4C /* TextSnippetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D536B61E730E98004CDD4C /* TextSnippetCell.swift */; };
+		60D536B91E730EA2004CDD4C /* PhotoSnippetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D536B81E730EA2004CDD4C /* PhotoSnippetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		60C567441E696909003F3717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60C5674A1E69692F003F3717 /* SnippetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnippetData.swift; sourceTree = "<group>"; };
 		60C5674C1E6DA62C003F3717 /* TextSnippetEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSnippetEntryViewController.swift; sourceTree = "<group>"; };
+		60D536B61E730E98004CDD4C /* TextSnippetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSnippetCell.swift; sourceTree = "<group>"; };
+		60D536B81E730EA2004CDD4C /* PhotoSnippetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSnippetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				60C567381E696909003F3717 /* AppDelegate.swift */,
 				60C5673A1E696909003F3717 /* ViewController.swift */,
 				60C5673C1E696909003F3717 /* Main.storyboard */,
+				60D536B61E730E98004CDD4C /* TextSnippetCell.swift */,
+				60D536B81E730EA2004CDD4C /* PhotoSnippetCell.swift */,
 				60C5673F1E696909003F3717 /* Assets.xcassets */,
 				60C567411E696909003F3717 /* LaunchScreen.storyboard */,
 				60C567441E696909003F3717 /* Info.plist */,
@@ -143,9 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D536B71E730E98004CDD4C /* TextSnippetCell.swift in Sources */,
 				60C5674D1E6DA62C003F3717 /* TextSnippetEntryViewController.swift in Sources */,
 				60C5673B1E696909003F3717 /* ViewController.swift in Sources */,
 				60C567391E696909003F3717 /* AppDelegate.swift in Sources */,
+				60D536B91E730EA2004CDD4C /* PhotoSnippetCell.swift in Sources */,
 				60C5674B1E69692F003F3717 /* SnippetData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,10 +275,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = XY2ER2LUTA;
 				INFOPLIST_FILE = Snippet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Fr3qFly.Snippet;
+				PRODUCT_BUNDLE_IDENTIFIER = "VWUE9JZKY9.edu.Fr3qFly.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -280,10 +289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = XY2ER2LUTA;
 				INFOPLIST_FILE = Snippet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Fr3qFly.Snippet;
+				PRODUCT_BUNDLE_IDENTIFIER = "VWUE9JZKY9.edu.Fr3qFly.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -308,6 +318,7 @@
 				60C567491E696909003F3717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

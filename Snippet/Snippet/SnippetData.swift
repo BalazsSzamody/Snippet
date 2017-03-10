@@ -7,28 +7,41 @@
 //
 
 import Foundation
+import UIKit
 
 enum SnippetType: String {
-    case text = "Text"
-    case photo = "Photo"
+    case Text = "Text"
+    case Photo = "Photo"
 }
 
 
 class SnippetData {
     let type: SnippetType
+    let date: Date
     
-    init( snippetType: SnippetType) {
+    init( snippetType: SnippetType, creationDate: Date) {
         type = snippetType
-        print("\(type.rawValue) snippet created")
+        date = creationDate
+        print("\(type.rawValue) snippet created at \(date)")
     }
 }
 
 class TextData: SnippetData{
     let textData: String
     
-    init (text: String) {
+    init (text: String, creationDate: Date) {
         textData = text
-        super.init(snippetType: .text)
+        super.init(snippetType: .Text, creationDate: creationDate)
     print("Text snippet data: \(textData)")
+    }
+}
+
+class PhotoData: SnippetData {
+    let photoData: UIImage
+    
+    init(photo: UIImage, creationDate: Date) {
+        photoData = photo
+        super.init(snippetType: .Photo, creationDate: creationDate)
+        print ("Photo snippet data: \(photoData)")
     }
 }
